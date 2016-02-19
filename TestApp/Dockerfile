@@ -5,4 +5,4 @@ WORKDIR /app
 RUN ["dnu", "restore"]
 
 EXPOSE 8080
-ENTRYPOINT ["dnx", "-p", "project.json", "kestrel"]
+ENTRYPOINT ["dnx", "-p", "project.json", "web"]
