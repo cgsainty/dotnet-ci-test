@@ -11,4 +11,4 @@ script:
  - dnu build ./TestApp.Tests/project.json 
  - dnx -p ./TestApp.Tests test
 after_success:
-- curl --data build=true -X POST https://registry.hub.docker.com/u/cgsainty/dotnet-ci-test/trigger/f57eb1cd-756c-4080-8906-f9c8a75caf7c/
+- curl --data build=true -X POST TRIGGER_DOCKER_BUILD
