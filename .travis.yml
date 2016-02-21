@@ -1,4 +1,7 @@
 language: csharp
 solution: TestApp.sln
 install: curl -sSL https://raw.githubusercontent.com/aspnet/Home/dev/dnvminstall.sh | DNX_BRANCH=dev sh && source ~/.dnx/dnvm/dnvm.sh dnvm upgrade gnu restore
-script: dnu build ./TestApp.Tests/project.json dnx -p ./TestApp.Tests test
+script: 
+dnu build ./TestApp/project.json
+dnu build ./TestApp.Tests/project.json 
+dnx -p ./TestApp.Tests test
